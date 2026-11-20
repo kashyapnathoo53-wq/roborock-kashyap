@@ -1,0 +1,10 @@
+# OS and environment
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary test screenshots
+frootle_hero*.png
+middle_aligned_hero.png
+gapping_03cm_check.png
+tmp_profile/

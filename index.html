@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <title>RoboRock India.com — Precision Floor &amp; Surface Care</title>
+  <meta name="description" content="Quietly engineered robotics for bright, calm, unhurried homes across India. Experience the S8 MaxV Ultra and the complete lineup." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER (Sticky, Background #FFFFFF, Border #E6DDD3)
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Mark -->
+      <a href="#overview" class="brand-mark" aria-label="RoboRock India.com Home">
+        <strong class="brand-name">RoboRock India.com</strong>
+        <small class="brand-sublabel">Intelligent Home Robotics</small>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#live-scrub" class="nav-link">Live Scrub</a>
+        <a href="#star-product" class="nav-link">Flagship</a>
+        <a href="#products" class="nav-link">Lineup</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Header Primary Action & Cart -->
+      <div class="header-actions">
+        <a href="#book-demo" class="btn btn-primary btn-sm">Book Free Demo</a>
+
+        <button class="cart-btn" onclick="toggleCartDrawer()" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+          </svg>
+          <strong class="cart-badge" id="cartCount">0</strong>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN PAGE CONTENT
+       ======================================================================== -->
+  <main>
+
+    <!-- SECTION 1: HERO (Inspired by Frootle Ecovacs Showcase, surface="#FFFFFF", No Buttons) -->
+    <section class="hero-section" id="overview">
+      <div class="container hero-container">
+        
+        <div class="hero-frootle-grid">
+          
+          <!-- Left Brand & Launch Column -->
+          <div class="hero-brand-column">
+            
+            <!-- Official Roborock Logo -->
+            <div class="hero-brand-logo" aria-label="Roborock">
+              <svg width="170" height="38" viewBox="0 0 170 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(2, 4)">
+                  <circle cx="15" cy="15" r="13" stroke="#EA0029" stroke-width="4" fill="none" />
+                  <circle cx="27" cy="15" r="8.5" stroke="#EA0029" stroke-width="3" fill="none" />
+                </g>
+                <text x="48" y="27" font-family="'Plus Jakarta Sans', Inter, -apple-system, sans-serif" font-size="23" font-weight="800" fill="#161616" letter-spacing="-0.03em">roborock</text>
+              </svg>
+            </div>
+
+            <div class="hero-launch-badge">2026 NEW LAUNCH</div>
+
+            <h1 class="hero-headline">ALL NEW SAROS SERIES</h1>
+
+            <p class="hero-subtitle">Advanced Everyday Cleaning</p>
+
+            <div class="hero-empowered-row">
+              <em class="hero-empowered-label">Empowered by</em>
+              <strong class="hero-empowered-tech tech-red">ReactiveAI</strong>
+              <div class="hero-empowered-divider">|</div>
+              <strong class="hero-empowered-tech tech-blue">TruEdge</strong>
+              <div class="hero-empowered-divider">|</div>
+              <strong class="hero-empowered-tech tech-teal">ZeroTangle</strong>
+            </div>
+
+          </div>
+
+          <!-- Right: 3 Robot Vacuums with Docks in a Row -->
+          <div class="hero-products-showcase">
+            
+            <!-- 1. Saros 20 Pro -->
+            <div class="hero-showcase-item">
+              <div class="hero-showcase-title">Saros 20 Pro</div>
+              <div class="hero-robot-wrapper">
+                <img src="beryllite_clean.png"
+                     alt="Roborock Saros 20 Pro with Multifunctional Dock"
+                     class="hero-robot-image" />
+              </div>
+            </div>
+
+            <!-- 2. S8 MaxV Ultra -->
+            <div class="hero-showcase-item">
+              <div class="hero-showcase-title">S8 MaxV Ultra</div>
+              <div class="hero-robot-wrapper">
+                <img src="s8_maxv_clean.png"
+                     alt="Roborock S8 MaxV Ultra with RockDock Ultra"
+                     class="hero-robot-image" />
+              </div>
+            </div>
+
+            <!-- 3. Qrevo Slim -->
+            <div class="hero-showcase-item">
+              <div class="hero-showcase-title">Qrevo Slim</div>
+              <div class="hero-robot-wrapper">
+                <img src="qrevo_maxv_clean.png"
+                     alt="Roborock Qrevo Slim with Multifunctional Dock"
+                     class="hero-robot-image" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Center Slide Capsule Indicator -->
+        <div class="hero-carousel-indicator-bar" aria-hidden="true">
+          <div class="hero-indicator-dash active"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 2: TECHNOLOGY SHOWCASE (id="technology", surface="#F6F1EB") -->
+    <section class="tech-showcase-section" id="technology">
+      <div class="container">
+        
+        <div class="tech-header text-center mx-auto">
+          <div class="section-kicker">Core Architecture</div>
+          <h2 class="section-title">Navigation, suction, and edge reach working in quiet balance.</h2>
+          <p class="section-subtitle mx-auto">Select a capability to inspect how each system operates in everyday spaces.</p>
+        </div>
+
+        <!-- 5 Interactive Tabs -->
+        <div class="tech-tabs-nav" id="techTabsNav">
+          <button type="button" class="tech-tab-btn active" data-tab-id="lidar-mapping">
+            <strong class="tab-index">01</strong> LiDAR Mapping
+          </button>
+          <button type="button" class="tech-tab-btn" data-tab-id="hyper-suction">
+            <strong class="tab-index">02</strong> Hyper Suction
+          </button>
+          <button type="button" class="tech-tab-btn" data-tab-id="tangle-free-brush">
+            <strong class="tab-index">03</strong> Anti-Tangle Rollers
+          </button>
+          <button type="button" class="tech-tab-btn" data-tab-id="edge-reach">
+            <strong class="tab-index">04</strong> Flexi Edge Reach
+          </button>
+          <button type="button" class="tech-tab-btn" data-tab-id="smart-dock">
+            <strong class="tab-index">05</strong> Auto-Dock &amp; Recharge
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tech-tab-panels">
+          
+          <div class="tech-panel active" id="panel-lidar-mapping">
+            <div class="tech-panel-content">
+              <div class="section-kicker">Precision Sensing</div>
+              <h3>Rapid 3D room mapping and multi-level memory</h3>
+              <p>Maps rooms accurately in daylight or dim corners, stores multi-floor layouts, and adapts routes around furniture without bumping.</p>
+            </div>
+            <div class="tech-panel-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Vivian_M_Set_189b08cc-1e62-49a5-85ce-bd989fd1cd2a.jpg?v=1757903453" alt="LiDAR Mapping Demo" class="tech-panel-img" />
+            </div>
+          </div>
+
+          <div class="tech-panel" id="panel-hyper-suction">
+            <div class="tech-panel-content">
+              <div class="section-kicker">Engineered Airflow</div>
+              <h3>Measured airflow for tile, marble, and low-pile rugs</h3>
+              <p>Lifts fine dust from grout lines and pet hair from weave textures while keeping acoustic levels refined.</p>
+            </div>
+            <div class="tech-panel-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/1_0c4f03e7-1afb-4503-9a4f-a0c9c64aad83.png?v=1784537625" alt="Hyper Suction Demo" class="tech-panel-img" />
+            </div>
+          </div>
+
+          <div class="tech-panel" id="panel-tangle-free-brush">
+            <div class="tech-panel-content">
+              <div class="section-kicker">Dual Roller Geometry</div>
+              <h3>Spiral brush geometry that guides hair clear</h3>
+              <p>Channels long hair and fibers toward the dust intake so rollers need far less manual unwinding.</p>
+            </div>
+            <div class="tech-panel-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Beryllite2.png?v=1767426020" alt="Anti-Tangle Rollers Demo" class="tech-panel-img" />
+            </div>
+          </div>
+
+          <div class="tech-panel" id="panel-edge-reach">
+            <div class="tech-panel-content">
+              <div class="section-kicker">Robotic Extension</div>
+              <h3>Adaptive side-sweep and mop extension along walls</h3>
+              <p>Reaches tight plinths, cabinet kickspaces, and corners where round bodies typically leave dust behind.</p>
+            </div>
+            <div class="tech-panel-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/1_0c4f03e7-1afb-4503-9a4f-a0c9c64aad83.png?v=1784537625" alt="Flexi Edge Reach Demo" class="tech-panel-img" />
+            </div>
+          </div>
+
+          <div class="tech-panel" id="panel-smart-dock">
+            <div class="tech-panel-content">
+              <div class="section-kicker">Autonomous Care</div>
+              <h3>Off-peak top-ups and seamless resume</h3>
+              <p>Returns automatically when battery runs low and resumes from the exact uncleaned zone once charged.</p>
+            </div>
+            <div class="tech-panel-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Set_Beryl_S_B.png?v=1790045685" alt="Auto-Dock Demo" class="tech-panel-img" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 3: INTERACTIVE SCRUB DEMO (id="live-scrub", surface="#FFFFFF") -->
+    <section class="live-scrub-section" id="live-scrub">
+      <div class="container">
+        
+        <div class="text-center mx-auto">
+          <div class="section-kicker">Interactive Surface Preview</div>
+          <h2 class="section-title">Glide across the floor to clear fine dust and footprints.</h2>
+          <p class="section-subtitle mx-auto">Drag or move the pointer across the light tile canvas to reveal the crisp white surface underneath.</p>
+        </div>
+
+        <div class="scrub-container">
+          <div class="canvas-wrapper" id="floor-reveal-canvas">
+            <div class="canvas-dirty-layer"></div>
+            
+            <div class="canvas-clean-layer" id="canvasCleanLayer">
+              <div class="canvas-bg-pattern"></div>
+            </div>
+
+            <div class="slider-handle" id="sliderHandle">
+              <div class="slider-robot-puck">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="canvas-instruction">Drag across the floor plane to test path coverage</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: STAR PRODUCT HERO (id="star-product", surface="#F6F1EB") -->
+    <section class="star-product-section" id="star-product">
+      <div class="container">
+        
+        <div class="star-product-grid">
+          
+          <!-- Visual Showcase (Left) -->
+          <div class="visual-showcase">
+            <div class="flagship-badge">Flagship Edition</div>
+            
+            <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/1_0c4f03e7-1afb-4503-9a4f-a0c9c64aad83.png?v=1784537625"
+                 alt="RoboRock S8 MaxV Ultra Flagship View" class="star-render-img" />
+
+            <!-- Callout Pins -->
+            <div class="callout-pin" style="left: 32%; top: 44%;" title="FlexiArm Extendable Side Brush">
+              <div class="pin-dot"></div>
+              <strong class="pin-label">FlexiArm Extendable Side Brush</strong>
+            </div>
+
+            <div class="callout-pin" style="left: 64%; top: 58%;" title="VibraRise Sonic Mop Module">
+              <div class="pin-dot"></div>
+              <strong class="pin-label">VibraRise Sonic Mop Module</strong>
+            </div>
+
+            <div class="callout-pin" style="left: 72%; top: 26%;" title="Warm-Air Mop Drying Dock">
+              <div class="pin-dot"></div>
+              <strong class="pin-label">Warm-Air Mop Drying Dock</strong>
+            </div>
+          </div>
+
+          <!-- Editorial Column (Right) -->
+          <div class="editorial-column">
+            <div class="editorial-eyebrow">The Star Product · Flagship Series</div>
+            <h2 class="product-headline">RoboRock S8 MaxV Ultra</h2>
+            <div class="product-subheading">Complete hands-free floor care, refined into a single quiet ritual.</div>
+            <p class="product-narrative">
+              Engineered for expansive Indian residences with mixed marble, vitrified tile, and area rugs, the S8 MaxV Ultra combines corner-reaching mechanics, heated mop washing, and reactive obstacle recognition—handling weeks of daily cleaning with virtually no manual intervention.
+            </p>
+
+            <!-- Key Metrics Row -->
+            <div class="key-metrics-row">
+              <div class="metric-item">
+                <strong class="metric-value">10,000 Pa</strong>
+                <small class="metric-label">HyperForce Suction</small>
+              </div>
+              <div class="metric-item">
+                <strong class="metric-value">60°C</strong>
+                <small class="metric-label">Hot-Water Mop Wash</small>
+              </div>
+              <div class="metric-item">
+                <strong class="metric-value">100%</strong>
+                <small class="metric-label">Corner Edge Reach</small>
+              </div>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="feature-grid">
+              <div class="feature-card">
+                <div class="card-index">01</div>
+                <h4 class="card-title">FlexiArm Edge Sweep &amp; Extra Edge Mop</h4>
+                <p class="card-detail">Automatically extends into tight right-angle corners and along wooden skirting boards where round vacuums normally leave a dust rim.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="card-index">02</div>
+                <h4 class="card-title">VibraRise 3.0 Sonic Scrubbing</h4>
+                <p class="card-detail">Dual vibration modules scrub dried kitchen spills at high frequency while lifting cleanly up to 20 mm upon sensing carpets.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="card-index">03</div>
+                <h4 class="card-title">DuoRoller Riser Brush System</h4>
+                <p class="card-detail">Counter-rotating all-rubber rollers lift fine monsoon grit and long hair without tangling around axle ends.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="card-index">04</div>
+                <h4 class="card-title">RockDock Ultra Self-Care Station</h4>
+                <p class="card-detail">Empties dust automatically, washes mop pads with heated water, dispenses solution, and dries with warm air to prevent odor.</p>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="editorial-actions">
+              <a href="#book-demo" class="btn btn-primary" onclick="preselectDemoModel('RoboRock S8 MaxV Series')">
+                Experience S8 MaxV Ultra in a Free Demo
+              </a>
+              <button type="button" class="btn btn-secondary" onclick="openProductModal('rr-s8-maxv')">
+                Inspect Full Specification
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 5: PRODUCT CATALOG (id="products", surface="#FFFFFF") -->
+    <section class="catalog-section" id="products">
+      <div class="container">
+        
+        <div class="catalog-header text-center mx-auto">
+          <div class="section-kicker">The Lineup</div>
+          <h2 class="section-title">Models tailored to compact flats, open living spaces, and glass.</h2>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+          
+          <!-- Product 1: rr-q-revo-s -->
+          <article class="product-card" id="card-rr-q-revo-s">
+            <div class="product-series-tag">Q Series</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Beryllite2.png?v=1767426020"
+                   alt="RoboRock Q Revo S" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock Q Revo S</h3>
+            <p class="product-tagline">Dual spinning mops, auto-empty dock, and structured obstacle avoidance.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹59,999</strong>
+              <del class="mrp-inr">₹74,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-q-revo-s')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('RoboRock Q Revo S')">Book Demo →</a>
+            </div>
+          </article>
+
+          <!-- Product 2: rr-s8-maxv -->
+          <article class="product-card" id="card-rr-s8-maxv">
+            <div class="product-series-tag">S Series · Flagship</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/1_0c4f03e7-1afb-4503-9a4f-a0c9c64aad83.png?v=1784537625"
+                   alt="RoboRock S8 MaxV Ultra" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock S8 MaxV Ultra</h3>
+            <p class="product-tagline">Edge-extending side brush, sonic mopping, and heated hands-free dock care.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹1,39,999</strong>
+              <del class="mrp-inr">₹1,69,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-s8-maxv')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('RoboRock S8 MaxV Series')">Book Demo →</a>
+            </div>
+          </article>
+
+          <!-- Product 3: rr-q8-max-plus -->
+          <article class="product-card" id="card-rr-q8-max-plus">
+            <div class="product-series-tag">Q Series</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Vivian_M_Set_189b08cc-1e62-49a5-85ce-bd989fd1cd2a.jpg?v=1757903453"
+                   alt="RoboRock Q8 Max+" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock Q8 Max+</h3>
+            <p class="product-tagline">Dual rubber rollers and self-emptying station for daily dust control.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹49,999</strong>
+              <del class="mrp-inr">₹59,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-q8-max-plus')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('RoboRock Q8 Max+')">Book Demo →</a>
+            </div>
+          </article>
+
+          <!-- Product 4: rr-q5-pro-plus -->
+          <article class="product-card" id="card-rr-q5-pro-plus">
+            <div class="product-series-tag">Q Series</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Saros_10R_4ff6f20b-f5c8-4aac-81b6-3a6575c250c2.png?v=1789886888"
+                   alt="RoboRock Q5 Pro+" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock Q5 Pro+</h3>
+            <p class="product-tagline">Balanced vacuum and mop pairing with high-capacity dust bag dock.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹37,999</strong>
+              <del class="mrp-inr">₹44,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-q5-pro-plus')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('RoboRock Q5 Pro+')">Book Demo →</a>
+            </div>
+          </article>
+
+          <!-- Product 5: rr-flexi-pro -->
+          <article class="product-card" id="card-rr-flexi-pro">
+            <div class="product-series-tag">Wet &amp; Dry</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/2_06eb12a0-4340-4aba-8202-d003cb51cc05.png?v=1788941901"
+                   alt="RoboRock Flexi Pro" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock Flexi Pro</h3>
+            <p class="product-tagline">Flat-reach cordless floor washer with self-cleaning roller drying.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹39,999</strong>
+              <del class="mrp-inr">₹47,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-flexi-pro')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('RoboRock Flexi Pro')">Book Demo →</a>
+            </div>
+          </article>
+
+          <!-- Product 6: rr-glass-care -->
+          <article class="product-card" id="card-rr-glass-care">
+            <div class="product-series-tag">Surface Care</div>
+            <div class="product-card-media">
+              <img src="https://cdn.shopify.com/s/files/1/0082/3666/2902/files/Set_Beryl_S_B.png?v=1790045685"
+                   alt="RoboRock GlassBot Compact" class="product-card-img" />
+            </div>
+            <h3 class="product-name">RoboRock GlassBot Compact</h3>
+            <p class="product-tagline">Steady suction glass cleaner for floor-to-ceiling windows and partitions.</p>
+            <div class="product-price-row">
+              <strong class="price-inr">₹29,999</strong>
+              <del class="mrp-inr">₹36,999</del>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="openProductModal('rr-glass-care')">Details</button>
+              <a href="#book-demo" class="link-demo" onclick="preselectDemoModel('Not Sure — Recommend One')">Book Demo →</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 6: VALUE PILLARS (id="daily-rhythm", surface="#FCFBF9") -->
+    <section class="pillars-section" id="daily-rhythm">
+      <div class="container">
+        
+        <div class="text-center mx-auto">
+          <div class="section-kicker">Everyday Rhythm</div>
+          <h2 class="section-title">Designed to blend into routines without demanding attention.</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <h3 class="pillar-title">Scheduled Calm</h3>
+            <p class="pillar-desc">Set quiet hours around mornings, naps, or work calls so cleaning never interrupts the room.</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3 class="pillar-title">Room-by-Room Precision</h3>
+            <p class="pillar-desc">Target kitchens after cooking or hallways after monsoons without running a full-house cycle.</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3 class="pillar-title">Clear Mobile Controls</h3>
+            <p class="pillar-desc">Adjust suction, water flow, and no-go zones intuitively from your phone.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 7: TESTIMONIALS (id="testimonials", surface="#FFFFFF") -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <div class="text-center mx-auto">
+          <div class="section-kicker">Homeowner Notes</div>
+          <h2 class="section-title">Feedback from households across India.</h2>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">"Keeps vitrified tiles and rugs noticeably cleaner between maid visits with minimal fuss."</blockquote>
+            <strong class="review-author">Ananya Deshmukh, Mumbai</strong>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">"Maps a split-level home accurately and handles fine dust that brooms usually kick around."</blockquote>
+            <strong class="review-author">Rohan Kulkarni, Pune</strong>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">"The scheduling and zone controls are straightforward once set up—genuinely helpful day to day."</blockquote>
+            <strong class="review-author">Meera Krishnan, Bengaluru</strong>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 8: FAQ (id="faq", surface="#FCFBF9") -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        
+        <div class="text-center mx-auto">
+          <div class="section-kicker">Common Questions</div>
+          <h2 class="section-title">Practical answers before you book.</h2>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" onclick="toggleFaqItem(this)">
+              How often should I schedule a cleaning run?
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              <p>Most homes run a quick sweep daily or every alternate day, with mopping set two to three times a week depending on foot traffic and open windows.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" onclick="toggleFaqItem(this)">
+              Can the robot detect stairs, balconies, and thresholds?
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Cliff sensors help prevent drops at stairs and ledges, while threshold climbing handles modest door transitions smoothly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" onclick="toggleFaqItem(this)">
+              How does dustbin and mop maintenance work?
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              <p>Standard models use a removable dustbin and washable mop cloth, while auto-dock models transfer collected debris into a sealed bag and assist with mop care.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 9: FREE DEMO BOOKING (id="book-demo", surface="#F6F1EB") -->
+    <section class="free-demo-section" id="book-demo">
+      <div class="container">
+        
+        <div class="demo-layout-grid">
+          
+          <!-- Context Column -->
+          <div class="demo-context-column">
+            <div class="section-kicker">Complimentary Walkthrough</div>
+            <h2 class="section-title">Book a Free Demo</h2>
+            <p class="section-subtitle">
+              See how a RoboRock model navigates real floor transitions, handles fine dust, and fits your home layout—available as an at-home walkthrough, studio visit, or guided video call.
+            </p>
+
+            <ul class="assurance-list">
+              <li class="assurance-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="assurance-icon">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                No obligation to purchase during or after the session
+              </li>
+              <li class="assurance-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="assurance-icon">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Tailored model comparison based on flooring type and room count
+              </li>
+              <li class="assurance-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="assurance-icon">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Guidance on setup, Wi-Fi pairing, and routine maintenance
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form Column -->
+          <div class="demo-form-card">
+            <form id="free-demo-booking-form" onsubmit="handleDemoSubmit(event)">
+              
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Enter your name" />
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Mobile / WhatsApp Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" required placeholder="+91 98XXX XXXXX" />
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Email Address (Optional)</label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="you@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="city" class="form-label">City</label>
+                <select id="city" name="city" class="form-select" required>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Delhi NCR">Delhi NCR</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Ahmedabad">Ahmedabad</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Other">Other Indian City</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred Demo Format</label>
+                <div class="radio-group-options">
+                  <label class="radio-label">
+                    <input type="radio" name="demoFormat" value="home-visit" checked required />
+                    At-Home Live Demo
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="demoFormat" value="studio-visit" required />
+                    Experience Studio Visit
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="demoFormat" value="video-call" required />
+                    1-on-1 Live Video Demo
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredModel" class="form-label">Model of Interest</label>
+                <select id="preferredModel" name="preferredModel" class="form-select">
+                  <option value="RoboRock S8 MaxV Series">RoboRock S8 MaxV Ultra (Star Flagship)</option>
+                  <option value="RoboRock Q Revo S">RoboRock Q Revo S</option>
+                  <option value="RoboRock Q8 Max+">RoboRock Q8 Max+</option>
+                  <option value="RoboRock Q5 Pro+">RoboRock Q5 Pro+</option>
+                  <option value="RoboRock Flexi Pro">RoboRock Flexi Pro</option>
+                  <option value="Not Sure — Recommend One">Not Sure — Recommend One</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredDateSlot" class="form-label">Preferred Time Window</label>
+                <select id="preferredDateSlot" name="preferredDateSlot" class="form-select" required>
+                  <option value="Morning (10:00 AM – 1:00 PM)">Morning (10:00 AM – 1:00 PM)</option>
+                  <option value="Afternoon (1:00 PM – 4:30 PM)">Afternoon (1:00 PM – 4:30 PM)</option>
+                  <option value="Evening (4:30 PM – 8:00 PM)">Evening (4:30 PM – 8:00 PM)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="flooringNotes" class="form-label">Flooring &amp; Home Notes (Optional)</label>
+                <textarea id="flooringNotes" name="flooringNotes" rows="3" class="form-textarea" placeholder="e.g., vitrified tiles, 2 BHK, two shedding cats, balcony threshold"></textarea>
+              </div>
+
+              <label class="consent-label">
+                <input type="checkbox" name="contactConsent" required checked />
+                I agree to be contacted regarding my free RoboRock India.com demo appointment.
+              </label>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Demo</button>
+
+              <div id="confirmationState" class="confirmation-box hidden">
+                <h4 class="confirm-heading">Free demo request received</h4>
+                <p class="confirm-message">Our team at RoboRock India.com will reach out to confirm your preferred time slot and demo format.</p>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER (surface="#FFFFFF", borderTop="#E6DDD3", textColor="#2B1D14")
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand-summary">
+          <strong class="footer-brand-name">RoboRock India.com</strong>
+          <p class="footer-statement">Curated smart home robotics and dedicated after-sales assistance across India.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#star-product">Flagship</a></li>
+            <li><a href="#products">Models</a></li>
+            <li><a href="#book-demo">Book Free Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Care &amp; Assistance</h4>
+          <div class="footer-contact-info">
+            <p>Email: <a href="mailto:care@roborockindia.com">care@roborockindia.com</a></p>
+            <p>Hotline: <a href="tel:18002588085">1800-258-8085</a></p>
+            <p>Pan-India Support: 9:30 AM – 7:00 PM IST</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 RoboRock India.com. All rights reserved. Precision Home Robotics.</div>
+        <div>Strict Light Mode · Editorial Refined Architecture</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PRODUCT DETAILS MODAL
+       ======================================================================== -->
+  <div class="modal-overlay hidden" id="productModal" onclick="closeProductModal(event)">
+    <div class="modal-dialog" onclick="event.stopPropagation()">
+      <button type="button" class="modal-close-btn" onclick="closeProductModal()" aria-label="Close dialog">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CART DRAWER
+       ======================================================================== -->
+  <div class="cart-drawer hidden" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3 style="font-size: 22px;">Shopping Cart</h3>
+      <button type="button" class="modal-close-btn" onclick="toggleCartDrawer()">✕</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsList">
+      <p style="text-align: center; color: var(--text-muted); margin-top: 48px;">Your cart is currently empty.</p>
+    </div>
+    <div style="padding-top: 20px; border-top: 1px solid var(--border-hairline); margin-top: auto;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+        <strong>Total:</strong>
+        <strong id="cartTotal" style="color: var(--brown-primary); font-size: 20px;">₹0</strong>
+      </div>
+      <a href="#book-demo" class="btn btn-primary" style="width: 100%;" onclick="toggleCartDrawer()">Proceed to Checkout / Book Demo</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
